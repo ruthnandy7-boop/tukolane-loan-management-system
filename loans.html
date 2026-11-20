@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loans | Tukolane Loan Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div><h1>Tukolane Loan Management System</h1><p>Tukolane Credit Finance Company | Academic demonstration</p></div>
+</header>
+<nav>
+  <a href="index.html" class="">Dashboard</a>
+  <a href="customers.html" class="">Customers</a>
+  <a href="loans.html" class="active">Loans</a>
+  <a href="repayments.html" class="">Repayments</a>
+  <a href="reports.html" class="">Reports</a>
+</nav>
+<main>
+<section class="card"><h2>Loan Application</h2><p>Select a registered customer and enter the loan details.</p><form id="applicationForm"><div><label>Customer</label><select id="applicationCustomer" required></select></div><div><label>Loan amount (UGX)</label><input id="loanAmount" type="number" min="1" required></div><div><label>Loan purpose</label><select id="loanPurpose"><option>Business stock</option><option>School fees</option><option>Emergency</option><option>Asset financing</option></select></div><div><label>Repayment period (months)</label><input id="repaymentMonths" type="number" min="1" max="36" required></div><div><label>Monthly interest rate (%)</label><input id="interestRate" type="number" min="0" step="0.1" required></div><button>Submit application</button></form><div id="applicationMessage" class="msg"></div></section><section class="card"><h2>Loan Applications</h2><div style="overflow:auto"><table id="applicationTable"></table></div></section><section class="card"><h2>Approved Loans</h2><div style="overflow:auto"><table id="loanTable"></table></div></section>
+</main>
+<footer>&copy; 2026 Tukolane Credit Finance Company | Academic prototype. Use fictitious data only.</footer>
+<script src="script.js"></script>
+</body>
+</html>

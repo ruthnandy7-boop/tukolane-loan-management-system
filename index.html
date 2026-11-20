@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Tukolane Loan Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div><h1>Tukolane Loan Management System</h1><p>Tukolane Credit Finance Company | Academic demonstration</p></div>
+</header>
+<nav>
+  <a href="index.html" class="active">Dashboard</a>
+  <a href="customers.html" class="">Customers</a>
+  <a href="loans.html" class="">Loans</a>
+  <a href="repayments.html" class="">Repayments</a>
+  <a href="reports.html" class="">Reports</a>
+</nav>
+<main>
+<section class="card"><h2>Management Dashboard</h2><p>This dashboard gives management a quick view of customers, loans, repayments and overdue amounts.</p><div class="stats" id="dashboardStats"><div class="stat"><span>Registered customers</span><strong id="statCustomers">0</strong></div><div class="stat"><span>Loan applications</span><strong id="statLoans">0</strong></div><div class="stat"><span>Principal disbursed</span><strong id="statDisbursed">UGX 0</strong></div><div class="stat"><span>Repayments received</span><strong id="statCollected">UGX 0</strong></div><div class="stat"><span>Outstanding balance</span><strong id="statBalance">UGX 0</strong></div><div class="stat"><span>Overdue amount</span><strong id="statOverdue">UGX 0</strong></div></div></section><section class="card"><h2>Arrears Follow-up</h2><p>The following active loans have overdue instalments.</p><ul id="arrearsList"></ul></section>
+</main>
+<footer>&copy; 2026 Tukolane Credit Finance Company | Academic prototype. Use fictitious data only.</footer>
+<script src="script.js"></script>
+</body>
+</html>

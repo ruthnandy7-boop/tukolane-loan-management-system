@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repayments | Tukolane Loan Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div><h1>Tukolane Loan Management System</h1><p>Tukolane Credit Finance Company | Academic demonstration</p></div>
+</header>
+<nav>
+  <a href="index.html" class="">Dashboard</a>
+  <a href="customers.html" class="">Customers</a>
+  <a href="loans.html" class="">Loans</a>
+  <a href="repayments.html" class="active">Repayments</a>
+  <a href="reports.html" class="">Reports</a>
+</nav>
+<main>
+<section class="card"><h2>Record Repayment</h2><p>Select an active loan and record a confirmed repayment. The system will update the balance and issue a receipt reference.</p><form id="repaymentForm"><div><label>Active loan</label><select id="repaymentLoan" required></select></div><div><label>Amount paid (UGX)</label><input id="repaymentAmount" type="number" min="1" required></div><div><label>Payment method</label><select id="paymentMethod"><option>Cash</option><option>Mobile money</option><option>Bank transfer</option></select></div><div><label>Payment reference</label><input id="paymentReference" required></div><button>Save repayment</button></form><div id="repaymentMessage" class="msg"></div></section><section class="card"><h2>Repayment History</h2><div style="overflow:auto"><table id="repaymentTable"></table></div></section>
+</main>
+<footer>&copy; 2026 Tukolane Credit Finance Company | Academic prototype. Use fictitious data only.</footer>
+<script src="script.js"></script>
+</body>
+</html>

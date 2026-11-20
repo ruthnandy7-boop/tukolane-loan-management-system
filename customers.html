@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customers | Tukolane Loan Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div><h1>Tukolane Loan Management System</h1><p>Tukolane Credit Finance Company | Academic demonstration</p></div>
+</header>
+<nav>
+  <a href="index.html" class="">Dashboard</a>
+  <a href="customers.html" class="active">Customers</a>
+  <a href="loans.html" class="">Loans</a>
+  <a href="repayments.html" class="">Repayments</a>
+  <a href="reports.html" class="">Reports</a>
+</nav>
+<main>
+<section class="card"><h2>Register Borrower</h2><p>Enter customer details. Use fictitious information for this academic prototype.</p><form id="customerForm"><div><label>Full name</label><input id="customerName" required></div><div><label>Phone number</label><input id="customerPhone" required></div><div><label>National ID</label><input id="nationalId"></div><div><label>Business type</label><select id="businessType"><option>Market vendor</option><option>Shop owner</option><option>Salaried worker</option><option>Boda boda rider</option><option>Other</option></select></div><div><label>Address</label><input id="address"></div><div><label>Monthly income (UGX)</label><input id="monthlyIncome" type="number" min="0"></div><button>Save customer</button></form><div id="customerMessage" class="msg"></div></section><section class="card"><h2>Registered Customers</h2><div style="overflow:auto"><table id="customerTable"></table></div></section>
+</main>
+<footer>&copy; 2026 Tukolane Credit Finance Company | Academic prototype. Use fictitious data only.</footer>
+<script src="script.js"></script>
+</body>
+</html>
